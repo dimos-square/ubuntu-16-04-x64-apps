@@ -143,11 +143,11 @@ sudo apt-get update
 sudo apt-get install -f toggldesktop
 ```
 
-## intellij 2018.1.6
+## intellij 2018.3
 ```
-sudo wget -P ~/Downloads https://download.jetbrains.com/idea/ideaIC-2018.1.6.tar.gz
-sudo tar xf ~/Downloads/ideaIC-2018.1.6.tar.gz -C /opt/
-sudo chmod +x /opt/idea-IC-181.5540.7/bin/idea.sh
+sudo wget -P ~/Downloads https://download.jetbrains.com/idea/ideaIC-2018.3.tar.gz
+sudo tar xf ~/Downloads/ideaIC-2018.3.tar.gz -C /opt/
+sudo chmod +x /opt/idea-IC-183.4284.148/bin/idea.sh
 ```
 #### plugins
 * Leiningen
