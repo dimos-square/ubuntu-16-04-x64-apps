@@ -159,7 +159,7 @@ sudo chmod +x /opt/idea-IC-183.4284.148/bin/idea.sh
 ### Install IntelliJ via JetBrains Toolbox
 
 An alternative way to install IntelliJ is via Jetbrains Toolbox. This is an official tool by Jetbrains which lets you 
-manage (update/rollback/remove) any Jetbrains IDE you have installed, as well as your projects.
+manage (install/update/rollback/remove) Jetbrains IDEs, as well as your projects.
 
 ```
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.13.4733.tar.gz
