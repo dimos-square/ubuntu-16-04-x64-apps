@@ -156,6 +156,17 @@ sudo chmod +x /opt/idea-IC-183.4284.148/bin/idea.sh
 * HashiCorp Terraform Language support
 * Docker integration
 
+### Install IntelliJ via JetBrains Toolbox
+
+An alternative way to install IntelliJ is via Jetbrains Toolbox. This is an official tool by Jetbrains which lets you 
+manage (install/update/rollback/remove) Jetbrains IDEs, as well as your projects.
+
+```
+wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.13.4733.tar.gz
+tar --strip-components=1 -xvzf jetbrains-toolbox-1.13.4733.tar.gz
+./jetbrains-toolbox && rm jetbrains-toolbox jetbrains-toolbox-1.13.4733.tar.gz
+```
+
 ## chrome
 ```
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
