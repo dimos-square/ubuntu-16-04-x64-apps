@@ -6,6 +6,11 @@ sudo apt-get update
 sudo apt-get install default-jdk
 ```
 
+## curl
+```
+sudo apt install curl
+```
+
 ## rlwrap
 ```
 sudo apt-get install rlwrap
