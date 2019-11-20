@@ -122,9 +122,7 @@ tar --strip-components=1 -xvzf jetbrains-toolbox-1.16.6067.tar.gz
 ### IDE
 intellij
 #### plugins
-* Leiningen
 * cursive
-* Markdown support
 * HashiCorp Terraform Language support
 * Docker integration
 
