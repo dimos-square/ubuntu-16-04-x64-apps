@@ -1,4 +1,4 @@
-# ubuntu-16-04-x64-apps
+# ubuntu-18-04-x64-apps
 
 ## java
 ```
