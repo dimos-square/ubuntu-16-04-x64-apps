@@ -113,45 +113,20 @@ rm postman.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 ```
 
-## slack
+## toolbox-1.16.6067
 ```
-sudo snap install slack --classic
+wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.16.6067.tar.gz
+tar --strip-components=1 -xvzf jetbrains-toolbox-1.16.6067.tar.gz
+./jetbrains-toolbox && rm jetbrains-toolbox jetbrains-toolbox-1.16.6067.tar.gz
 ```
-
-## toggl 7.4.122
-```
-wget http://fr.archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-1_amd64.deb
-wget http://fr.archive.ubuntu.com/ubuntu/pool/universe/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5ubuntu1_amd64.deb
-sudo dpkg -i libgstreamer*.deb
-sudo wget -P ~/Downloads https://github.com/toggl/toggldesktop/releases/download/v7.4.122/toggldesktop_7.4.122_amd64.deb
-sudo dpkg -i /home/dimos/Downloads/toggldesktop_7.4.122_amd64.deb
-sudo apt-get update
-sudo apt-get install -f toggldesktop
-```
-
-## intellij 2018.3
-```
-sudo wget -P ~/Downloads https://download.jetbrains.com/idea/ideaIC-2018.3.tar.gz
-sudo tar xf ~/Downloads/ideaIC-2018.3.tar.gz -C /opt/
-sudo chmod +x /opt/idea-IC-183.4284.148/bin/idea.sh
-```
+### IDE
+intellij
 #### plugins
 * Leiningen
 * cursive
 * Markdown support
 * HashiCorp Terraform Language support
 * Docker integration
-
-### Install IntelliJ via JetBrains Toolbox
-
-An alternative way to install IntelliJ is via Jetbrains Toolbox. This is an official tool by Jetbrains which lets you 
-manage (install/update/rollback/remove) Jetbrains IDEs, as well as your projects.
-
-```
-wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.13.4733.tar.gz
-tar --strip-components=1 -xvzf jetbrains-toolbox-1.13.4733.tar.gz
-./jetbrains-toolbox && rm jetbrains-toolbox jetbrains-toolbox-1.13.4733.tar.gz
-```
 
 ## chrome
 ```
@@ -163,6 +138,7 @@ sudo apt-get install google-chrome-stable
 #### extensions
 * LastPass
 * AdBlock
+* AWS Extend Switch Roles
 
 ## heroku
 ```
