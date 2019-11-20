@@ -73,21 +73,6 @@ sudo chmod +x /usr/local/bin/terraform
 
 ## aws-cli - python 3 - pip
 
-### Using standalone pip, global python
-
-```
-curl -O https://bootstrap.pypa.io/get-pip.py
-python get-pip.py --user
-pip install awscli --upgrade --user
-alias python=python3
-source ~/.bashrc
-sudo apt install python3-pip
-pip install --upgrade pip
-pip install awscli --upgrade --user
-```
-
-### Using Conda
-
 Conda is a package manager for python that, though optional, allows for a better management of environments and I prefer to use it over pip because it's much more flexible. Miniconda is a software bundle that contains python, pip and conda among others, all isolated from the rest of the system.
 
 ```
@@ -99,18 +84,14 @@ source ~/.bashrc
 
 At this point, to verify that all's well, `which pip` and `which python` should both point to the installation directory of miniconda, e.g. `$HOME/miniconda3/bin/pip` and `$HOME/miniconda3/bin/python`
 ```
-pip install pip -U
 pip install awscli
 ```
 
-## pgadmin 4
+## dbeaver
 ```
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-sudo apt-get install wget ca-certificates
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install postgresql-10 pgadmin4
+wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+sudo apt update && sudo apt install dbeaver-ce
 ```
 
 ## openvpn
