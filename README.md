@@ -134,3 +134,9 @@ sudo apt-get install google-chrome-stable
 ```
 sudo snap install heroku --classic
 ```
+
+## zsh
+```
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
