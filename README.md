@@ -117,6 +117,7 @@ intellij
 * cursive
 * HashiCorp Terraform Language support
 * Docker integration
+* CSV Plugin
 
 ## chrome
 ```
